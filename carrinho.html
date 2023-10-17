@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            
+            display: flex;
+            justify-content: center;
+        }
+        .cart {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        .cart h2 {
+            margin-top: 0;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .product img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        } 
+        .product .info {
+            flex: 1;
+        }
+        .product .price {
+            font-weight: bold;
+        }
+        .total {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Carrinho de Compras</h1>
+    </div>
+
+    <div class="cart">
+        <h2>Seu Carrinho</h2>
+        <div class="product">
+            <img src="produto1.jpg" alt="Produto 1">
+            <div class="info">
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1.</p>
+            </div>
+            <div class="price">$50,00</div>
+        </div>
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <div class="info">
+                <h3>Produto 2</h3>
+                <p>Descrição do Produto 2.</p>
+            </div>
+            <div class="price">$60,00</div>
+        </div>
+        <div class="product">
+            <img src="produto3.jpg" alt="Produto 3">
+            <div class="info">
+                <h3>Produto 3</h3>
+                <p>Descrição do Produto 3.</p>
+            </div>
+            <div class="price">$45,00</div>
+        </div>
+        
+        <div class="total">Total: $155,00</div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
+    </div>
+</body>
+</html>

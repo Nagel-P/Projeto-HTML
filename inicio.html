@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+      <h1>Bem-vindo ao Mercado Livre do Paraguai!</h1>
+      <input type="text" id="searchInput" placeholder="Pesquisar produtos">
+      <button onclick="pesquisar()">Pesquisar</button>
+  </div>
+
+  <div class="content">
+    <div class="product">
+      <img src="2012-02-06-conceito-para-o-novo-xbox.webp" alt="Produto 1">
+      <h3>Xbox 720</h3>
+      <p>R$ 5.000,00</p>
+      <button onclick="adicionarProduto('Produto 1', 5000)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product">
+      <img src="d1a2aee1a4fc487658b3e932114a79a7.webp" alt="Produto 2">
+      <h3>Notebook Gamer Última Geração</h3>
+      <p>R$ 6.000,00</p>
+      <button onclick="adicionarProduto('Produto 2', 6000)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product">
+      <img src="download.jpg" alt="Produto 3">
+      <h3>Fiat Uno Quebrado</h3>
+      <p>R$ 4.500,00</p>
+      <button onclick="adicionarProduto('Produto 3', 4500)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

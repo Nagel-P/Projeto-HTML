@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .register-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .register-container h2 {
+      text-align: center;
+    }
+    .register-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    .register-container button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+    .register-container button:hover {
+      background-color: #2980b9;
+    }
+    .footer {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Cadastro</h2>
+    <form action="./inicio.html">
+      <input type="text" placeholder="Nome" id="name" required>
+      <input type="email" placeholder="E-mail" id="email" required>
+      <input type="password" placeholder="Senha" id="password" required>
+      <input type="password" placeholder="Confirme a senha" id="confirmPassword" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
+  </div>
+
+</body>
+</html>

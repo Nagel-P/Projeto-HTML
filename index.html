@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-container, .cadastro-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-bottom: 20px; /* Adicionando margem entre as caixas */
+    }
+    .login-container h2, .cadastro-container h5 {
+      text-align: center;
+    }
+    .login-container input, .cadastro-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    .login-container button, .cadastro-container button, .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+    .login-container button:hover, .cadastro-container button:hover, .btn:hover {
+      background-color: #2980b9;
+    }
+    .footer {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="./inicio.html">
+        <input type="text" placeholder="Nome de usuário" id="username" required>
+        <input type="password" placeholder="Senha" id="password" required>
+        <button type="submit">Entrar</button> 
+      </form>
+    </div>
+    
+    <div class="cadastro-container">
+      <h5>Não possui uma conta? Cadastre-se!</h5>
+      <form action="./cadastro.html">
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
+  </div>
+
+</body>
+</html>
