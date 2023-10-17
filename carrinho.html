@@ -1,107 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-        .header {
-            background-color: #3498db;
-            color: #fff;
-            padding: 20px;
-            
-            display: flex;
-            justify-content: center;
-        }
-        .cart {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 10px auto;
-            width: 80%;
-            max-width: 600px;
-        }
-        .cart h2 {
-            margin-top: 0;
-        }
-        .product {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .product img {
-            max-width: 100px;
-            max-height: 100px;
-            margin-right: 10px;
-        } 
-        .product .info {
-            flex: 1;
-        }
-        .product .price {
-            font-weight: bold;
-        }
-        .total {
-            text-align: right;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .footer {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            flex-shrink: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <div class="header">
         <h1>Carrinho de Compras</h1>
+        <div class="buttons">
+            <button onclick="window.location.href='inicio.html'"><img src="Picsart_23-10-17_11-36-22-462.png" alt="Inicio"></button>
+            <button onclick="window.location.href='add_produto.html'"><img src="Picsart_23-10-17_11-42-29-797.png" alt="Adicionar Produto"></button>
+            <button onclick="window.location.href='index.html'"><img src="Picsart_23-10-17_14-37-48-244.png" alt="Login"></button>
+        </div>
     </div>
 
     <div class="cart">
         <h2>Seu Carrinho</h2>
         <div class="product">
-            <img src="produto1.jpg" alt="Produto 1">
+            <img src="2012-02-06-conceito-para-o-novo-xbox.webp" alt="Produto 1">
             <div class="info">
-                <h3>Produto 1</h3>
-                <p>Descrição do Produto 1.</p>
+                <h3>Xbox 720</h3>
+                <p>Jardim de Piranhas, RN</p>
             </div>
-            <div class="price">$50,00</div>
+            <div class="price">$5.000,00</div>
         </div>
         <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
+            <img src="d1a2aee1a4fc487658b3e932114a79a7.webp" alt="Produto 2">
             <div class="info">
-                <h3>Produto 2</h3>
-                <p>Descrição do Produto 2.</p>
+                <h3>Notebook Gamer Última Geração</h3>
+                <p>Entrepelado, RS</p>
             </div>
-            <div class="price">$60,00</div>
+            <div class="price">$6.000,00</div>
         </div>
         <div class="product">
-            <img src="produto3.jpg" alt="Produto 3">
+            <img src="download.jpg" alt="Produto 3">
             <div class="info">
-                <h3>Produto 3</h3>
-                <p>Descrição do Produto 3.</p>
+                <h3>Fiat Uno Quebrado</h3>
+                <p>Pintópolis, MG</p>
             </div>
-            <div class="price">$45,00</div>
+            <div class="price">$4.500,00</div>
         </div>
-        
-        <div class="total">Total: $155,00</div>
+
+        <div class="total">Total: $15.500,00</div>
     </div>
 
-    <div class="footer">
-        &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
-    </div>
+    <footer>
+        <div class="footer">
+            &copy; 2023 Mercado Livre do Paraguai - Todos os direitos reservados
+        </div>
+    </footer>
 </body>
 </html>
