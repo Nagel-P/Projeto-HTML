@@ -4,47 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
+  <title>Mercado Livre do Paraguai</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .header {
-      position: relative; /* Permite posicionar os botões relativamente a este elemento */
-    }
-
-    .header .buttons {
-      position: absolute;
-      top: 10px; /* Ajusta a posição vertical dos botões */
-      right: 10px; /* Ajusta a posição horizontal dos botões */
-      display: flex;
-      gap: 10px; /* Espaçamento entre os botões */
-    }
-
-    .header .buttons button {
-      padding: 10px 15px;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body>
   <div class="header">
-    <h1>Bem-vindo ao Mercado Livre do Paraguai!</h1>
-    <div class="buttons">
-      <button>Botão 1</button>
-      <button>Botão 2</button>
-      <button>Botão 3</button>
+    <h1>Mercado Livre do Paraguai!</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar produtos">
+      <button>Pesquisar</button>
     </div>
-    <input type="text" id="searchInput" placeholder="Pesquisar produtos">
-    <button onclick="pesquisar()">Pesquisar</button>
+    <div class="buttons">
+      <button onclick="window.location.href='carrinho.html'"><img src="Picsart_23-10-17_11-36-35-720.png" alt="Carrinho"></button>
+      <button onclick="window.location.href='add_produto.html'"><img src="Picsart_23-10-17_11-42-29-797.png" alt="Adicionar Produto"></button>
+      <button onclick="window.location.href='index.html'"><img src="Picsart_23-10-17_14-37-48-244.png" alt="Login"></button>
+    </div>
   </div>
 
   <div class="content">
     <div class="product">
       <img src="2012-02-06-conceito-para-o-novo-xbox.webp" alt="Produto 1">
       <h3>Xbox 720</h3>
+      <p><b>Jardim de Piranhas, RN</b></p>
       <p>R$ 5.000,00</p>
       <button onclick="adicionarProduto('Produto 1', 5000)">Adicionar ao Carrinho</button>
     </div>
@@ -52,6 +34,7 @@
     <div class="product">
       <img src="d1a2aee1a4fc487658b3e932114a79a7.webp" alt="Produto 2">
       <h3>Notebook Gamer Última Geração</h3>
+      <p><b>Entrepelado, RS</b></p>
       <p>R$ 6.000,00</p>
       <button onclick="adicionarProduto('Produto 2', 6000)">Adicionar ao Carrinho</button>
     </div>
@@ -59,6 +42,7 @@
     <div class="product">
       <img src="download.jpg" alt="Produto 3">
       <h3>Fiat Uno Quebrado</h3>
+      <p><b>Pintópolis, MG</b></p>
       <p>R$ 4.500,00</p>
       <button onclick="adicionarProduto('Produto 3', 4500)">Adicionar ao Carrinho</button>
     </div>
@@ -68,6 +52,6 @@
     &copy; 2023 Mercado Livre do Paraguay - Todos os direitos reservados
   </div>
 
-  <script src="script.js"></script>
 </body>
+
 </html>
