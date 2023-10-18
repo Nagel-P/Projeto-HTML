@@ -22,7 +22,7 @@ document.getElementById("productForm").addEventListener("submit", function(event
             const img = document.createElement("img");
             img.src = product.image;
             listItem.appendChild(img);
-            listItem.innerHTML += `<br>${product.name} - R$ ${product.price} <button class="removeButton" data-id="${product.id}">Remover</button>`;
+            listItem.innerHTML += `${product.name} - R$ ${product.price} <button class="removeButton" data-id="${product.id}">Remover</button>`;
             productList.appendChild(listItem);
 
             document.getElementById("productName").value = "";
