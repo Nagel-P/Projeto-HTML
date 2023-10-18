@@ -2,8 +2,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
-}
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
 
 .header {
     background-color: #3498db;
@@ -13,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    grid-area: header;
 }
 .buttons {
     display: flex;
@@ -42,6 +50,7 @@ body {
     margin: 10px auto;
     width: 80%;
     max-width: 600px;
+    grid-area: main;
 }
 
 .cart h2 {
@@ -84,6 +93,7 @@ body {
     width: 100%;
     bottom: 0;
     flex-shrink: 0;
+    grid-area: footer;
 }
 
 /* teste*/
@@ -102,8 +112,8 @@ body {
 }
 
 .product-cell img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .description-cell {
@@ -116,4 +126,3 @@ body {
     font-weight: bold;
     margin-top: 20px;
 }
-
