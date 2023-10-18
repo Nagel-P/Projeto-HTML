@@ -59,9 +59,19 @@ body {
 .form-group input {
     text-align: right;
 }
-.product img {
-    max-width: 100px; /* Largura máxima da imagem */
-    max-height: 100px; /* Altura máxima da imagem */
+  /* Estilos para as imagens dos produtos */
+  #productList img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+}
+#productForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
 }
 .footer {
     background-color: #3498db;
