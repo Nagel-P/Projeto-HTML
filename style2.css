@@ -85,3 +85,35 @@ body {
     bottom: 0;
     flex-shrink: 0;
 }
+
+/* teste*/
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-cell, .price-cell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-cell img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.description-cell {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
